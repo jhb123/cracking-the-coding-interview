@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Oct 27 16:27:53 2022
+Created on Thu Oct 27 17:47:30 2022
 
 @author: josephbriggs
 """
-
 
 class Node():
     '''
