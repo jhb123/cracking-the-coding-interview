@@ -183,7 +183,7 @@ class SLL():
             size +=1
             p1 = p1.next_node 
         return size
-    
+        
 def sum_two_linked_lists_2(num1,num2):
     '''
     Problem 2.5
