@@ -1,3 +1,4 @@
 .DS_store
 .vscode/
 ctci.egg-info/
+__pycache__
