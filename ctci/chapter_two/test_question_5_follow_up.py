@@ -5,13 +5,13 @@ Created on Thu Nov  3 12:02:06 2022
 
 @author: josephbriggs
 """
-import linked_list_functions as llf
-from question_5_follow_up import sum_two_linked_lists_2
+from ctci.linked_list.linked_list_functions import SLL
+from ctci.chapter_two.question_5_follow_up import sum_two_linked_lists_2
 
 def test_sum_two_linked_lists_lots_of_nines():
     # 999+9999 = 10998
-    num1 = llf.SLL()
-    num2 = llf.SLL()
+    num1 = SLL()
+    num2 = SLL()
     for i in range(3):
         num1.add_node(9)
         num2.add_node(9)
@@ -25,8 +25,8 @@ def test_sum_two_linked_lists_lots_of_nines():
         p1 = p1.next_node
 
 def test_sum_two_linked_lists_output_longer_than_inputs():
-    num1 = llf.SLL()
-    num2 = llf.SLL()
+    num1 = SLL()
+    num2 = SLL()
     
     # example, 716+592 = 1308
     num1.add_node(7)
@@ -48,8 +48,8 @@ def test_sum_two_linked_lists_output_longer_than_inputs():
 
 def test_sum_two_linked_lists_one_missing_input():
 
-    num1 = llf.SLL()
-    num2 = llf.SLL()
+    num1 = SLL()
+    num2 = SLL()
     for i in range(3):
         num1.add_node(9)
     summed = sum_two_linked_lists_2(num1,num2)

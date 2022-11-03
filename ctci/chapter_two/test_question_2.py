@@ -5,8 +5,8 @@ Created on Thu Nov  3 13:35:47 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL
-from question_2 import find_k_from_the_end
+from ctci.linked_list.linked_list_functions import SLL
+from ctci.chapter_two.question_2 import find_k_from_the_end
 
 def test_find_k_from_the_end_last_number():
     

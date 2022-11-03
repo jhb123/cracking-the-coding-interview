@@ -5,8 +5,8 @@ Created on Thu Nov  3 12:02:06 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL
-from question_5 import sum_two_linked_lists
+from ctci.linked_list.linked_list_functions import SLL
+from ctci.chapter_two.question_5 import sum_two_linked_lists
 
 
 def test_sum_two_linked_lists_with_carrying():

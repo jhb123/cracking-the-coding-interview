@@ -5,8 +5,8 @@ Created on Thu Nov  3 14:19:52 2022
 
 @author: josephbriggs
 """
-from question_7 import intersecting_node
-from linked_list_functions import SLL,splice
+from ctci.chapter_two.question_7 import intersecting_node
+from ctci.linked_list.linked_list_functions import SLL,splice
 
 def test_intersection():
     

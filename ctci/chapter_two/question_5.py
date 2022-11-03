@@ -5,12 +5,12 @@ Created on Thu Nov  3 11:55:13 2022
 
 @author: josephbriggs
 """
-import linked_list_functions as llf
+from ctci.linked_list.linked_list_functions import SLL
 
 
 def sum_two_linked_lists(num1,num2):
     # question 2.5, turning the lists into ints is not allowed
-    summed = llf.SLL()
+    summed = SLL()
 
     rem = 0
     

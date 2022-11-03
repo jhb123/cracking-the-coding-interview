@@ -6,8 +6,8 @@ Created on Thu Nov  3 13:13:39 2022
 @author: josephbriggs
 """
 
-from linked_list_functions import SLL
-from question_3 import delete_middle_node
+from ctci.linked_list.linked_list_functions import SLL
+from ctci.chapter_two.question_3 import delete_middle_node
 
 def test_delete_middle_node_centre():
     

@@ -5,7 +5,7 @@ Created on Thu Nov  3 11:55:13 2022
 
 @author: josephbriggs
 """
-import linked_list_functions as llf
+from ctci.linked_list.linked_list_functions import SLL,Node
 
 def sum_two_linked_lists_2(num1,num2):
     '''
@@ -75,7 +75,7 @@ def sum_two_linked_lists_2(num1,num2):
         delta = -1*delta
         
     # pad the shorter linked list with leading zeros
-    pad_ll = llf.SLL()
+    pad_ll = SLL()
     for i in range(delta):
         pad_ll.add_node(0)
     p1 = num2.head
@@ -97,18 +97,18 @@ def sum_two_linked_lists_2(num1,num2):
         carry, smaller_node = sum_recurrsive(p1.next_node,p2.next_node)
         
         val = p1.data + p2.data + carry
-        current_node = llf.Node(val%10)
+        current_node = Node(val%10)
         current_node.next_node = smaller_node
         return val//10, current_node
     
     c,p3 = sum_recurrsive(p1, p2)
     if c:
-        n = llf.Node(c)
+        n = Node(c)
         n.next_node = p3
         p3 = n
 
     
-    summed = llf.SLL()
+    summed = SLL()
     summed.head = p3
     
     return summed

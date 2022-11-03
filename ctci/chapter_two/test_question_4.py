@@ -5,8 +5,8 @@ Created on Thu Nov  3 12:19:00 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL
-from question_4 import partition_SLL
+from ctci.linked_list.linked_list_functions import SLL
+from ctci.chapter_two.question_4 import partition_SLL
 
 def test_partition():
     # question 2.4, time complexity O(n), space complexity O(n)

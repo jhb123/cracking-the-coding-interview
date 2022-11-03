@@ -5,8 +5,9 @@ Created on Thu Nov  3 15:51:16 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL,splice
-from question_8 import loop_detection
+
+from ctci.linked_list.linked_list_functions import SLL,splice
+from ctci.chapter_two.question_8 import loop_detection
 
 def test_loop_detection_even_walk_in_odd_loop():
     

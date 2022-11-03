@@ -5,7 +5,7 @@ Created on Thu Nov  3 14:46:32 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL,splice
+# from ctci.linked_list.linked_list_functions import SLL,splice
 
 def loop_detection(ll):
     # linear time solution. Step 1 takes at most the length of the linked list

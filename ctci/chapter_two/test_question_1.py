@@ -5,8 +5,8 @@ Created on Thu Nov  3 13:24:40 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL
-from question_1 import remove_duplicates
+from ctci.linked_list.linked_list_functions import SLL
+from ctci.chapter_two.question_1 import remove_duplicates
 
 def test_remove_duplicates():
     # question 2.1

@@ -6,7 +6,7 @@ Created on Thu Nov  3 13:19:26 2022
 @author: josephbriggs
 """
 
-from linked_list_functions import SLL
+from ctci.linked_list.linked_list_functions import SLL
 
 def remove_duplicates(ll):
     '''

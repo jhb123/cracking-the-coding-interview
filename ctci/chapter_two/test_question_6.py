@@ -5,8 +5,8 @@ Created on Thu Nov  3 13:47:42 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL
-from question_6 import swap_order_iterative,swap_order_recursive,is_palidrome
+from ctci.linked_list.linked_list_functions import SLL
+from ctci.chapter_two.question_6 import swap_order_iterative,swap_order_recursive,is_palidrome
 
 def test_reverse_iterative():
     forward_list = SLL()

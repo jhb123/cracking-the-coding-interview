@@ -6,7 +6,7 @@ Created on Wed Nov  2 10:35:54 2022
 @author: josephbriggs
 """
 
-from linked_list_functions import SLL
+from ctci.linked_list.linked_list_functions import SLL
 
 def swap_order_recursive(p1):
     # time complexity = O(n), memory complexity = O(n)

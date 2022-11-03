@@ -5,7 +5,7 @@ Created on Thu Nov  3 12:19:00 2022
 
 @author: josephbriggs
 """
-from linked_list_functions import SLL
+from ctci.linked_list.linked_list_functions import SLL
 
 def partition_SLL(val,input_ll,left_ll,right_ll):
     
