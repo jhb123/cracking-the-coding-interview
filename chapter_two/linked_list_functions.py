@@ -112,8 +112,15 @@ class SLL():
             size +=1
             p1 = p1.next_node 
         return size
-        
-
+    
+    def get_final_node(self):
+        p1 = self.head
+        while p1.next_node:
+            p1 = p1.next_node
+        return p1
+    
+def splice(p1,p2):
+    p1.next_node = p2
 
 def test_create_sll():
     linked_list = SLL()
@@ -165,8 +172,26 @@ def delete_one_node_test():
         i += 1
 
     print('successfully deleted nodes')
+    
+
+
+def splice_test():
+    linked_list1 = SLL()
+    linked_list2 = SLL()
+
+    for i in range(10):
+        linked_list1.add_node(i)
+        linked_list2.add_node(i)
+
+    p1 = linked_list1.get_final_node()
+   
+
+    splice(p1,linked_list2.head)
+    
+    linked_list1.print_list()
 
 
 if __name__ == "__main__":
     test_create_sll()
     delete_one_node_test()
+    splice_test()
