@@ -2,7 +2,8 @@
 # Solutions and Study Notes for "Cracking the Coding Interview"
 
 Python solutions to the sixth edition. 
-![Tests](https://github.com/jhb123/cracking-the-coding-interview/actions/workflows/tests.yml/badge.svg)
+
+![example workflow](https://github.com/jhb123/cracking-the-coding-interview/actions/workflows/tests.yaml/badge.svg)
 
 ## Installation
 
