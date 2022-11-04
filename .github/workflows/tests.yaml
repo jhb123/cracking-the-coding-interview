@@ -1,7 +1,5 @@
 name: Python Tests
 
-name: Tests
-
 on:
   - push
   - pull_request
