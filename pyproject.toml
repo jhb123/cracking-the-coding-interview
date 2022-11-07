@@ -19,6 +19,6 @@ classifiers = [
 ]
 
 dependencies = [
-	
+	'pytest',
 ]
 
