@@ -12,7 +12,9 @@ class Stack:
     def __init__(self):
         
         self.__top = None
-    
+        self.__head = None
+        self.__size = 0
+        
     def push(self,val):
         if val is None:
             raise ValueError("Cannot push None to stack")
@@ -27,7 +29,16 @@ class Stack:
             
         else:
             self.__top = Node(val)
-        
+            
+        self.__size += 1
+            
+    def get_top_node(self):
+        return self.__top
+    
+    @property
+    def size(self):
+        return self.__size
+
         
     def peek(self):
         if self.__top:
@@ -39,6 +50,8 @@ class Stack:
         if self.__top:
             val  = self.__top.data
             self.__top = self.__top.next_node
+            self.__size -= 1
+
             return val
         else:
             return None
