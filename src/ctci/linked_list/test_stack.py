@@ -19,11 +19,20 @@ def test_stack_is_empty_on_creation():
 def test_empty_stack_pop_is_none():
     test_stack = Stack()
     assert test_stack.pop() is None
+    
+def test_empty_stack_peekis_none():
+    test_stack = Stack()
+    assert test_stack.peek() is None
 
 def test_stack_push_one_element():
     test_stack = Stack()
     test_stack.push(1)
     assert test_stack.peek() == 1
+    
+def test_stack_pop_one_element():
+    test_stack = Stack()
+    test_stack.push(1)
+    assert test_stack.pop() == 1
 
 def test_stack_push_many_elements():
     test_stack = Stack()

@@ -30,8 +30,11 @@ class Stack:
         
         
     def peek(self):
-        return self.__top.data
-    
+        if self.__top:
+            return self.__top.data
+        else:
+            return None
+        
     def pop(self):
         if self.__top:
             val  = self.__top.data
