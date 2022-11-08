@@ -27,5 +27,6 @@ pytest
 
 - Chapter one 
 - Chapter two
+- Chapter three
 
 
