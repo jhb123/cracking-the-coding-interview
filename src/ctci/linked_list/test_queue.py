@@ -50,3 +50,6 @@ def test_queue_add_none():
     with pytest.raises(ValueError):
         test_queue.add(None)
 
+def test_queue_peek_none():
+    test_queue = Queue()
+    assert test_queue.peek() == None

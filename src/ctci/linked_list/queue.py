@@ -38,8 +38,10 @@ class Queue:
             return data
     
     def peek(self):
-        
-        return self.__top.data
+        if self.__top:
+            return self.__top.data
+        else:
+            return None
     
     
     def is_empty(self):
